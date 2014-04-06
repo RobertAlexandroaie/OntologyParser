@@ -1,0 +1,623 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/robert/ontologies/2013/9/untitled-ontology-5"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/robert/ontologies/2013/9/untitled-ontology-5">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Cousins"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grandparents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nephews"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Relatives"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#marriedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#parentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#siblingOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sonOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alexandroaie_Ariclia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alexandroaie_Didi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alexandroaie_Gheorghe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alexandroaie_Oana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alexandroaie_Raul"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alexandroaie_Vasile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Buta_Alexandra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Buta_Aurora"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Buta_Bogdan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Buta_Ioan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Buta_Radu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Buta_Sabina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Buta_Vica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Craciun_David"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Craciun_Florin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Craciun_Irina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tudose_Adriana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tudose_Marian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tudose_Ovidiu"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Cousins"/>
+        <Class IRI="#Relatives"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grandparents"/>
+        <Class IRI="#Relatives"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nephews"/>
+        <Class IRI="#Relatives"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parents"/>
+        <Class IRI="#Relatives"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Grandparents"/>
+        <NamedIndividual IRI="#Alexandroaie_Ariclia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Alexandroaie_Ariclia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Alexandroaie_Didi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parents"/>
+        <NamedIndividual IRI="#Alexandroaie_Gheorghe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Alexandroaie_Gheorghe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Alexandroaie_Oana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cousins"/>
+        <NamedIndividual IRI="#Alexandroaie_Raul"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Alexandroaie_Raul"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grandparents"/>
+        <NamedIndividual IRI="#Alexandroaie_Vasile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Alexandroaie_Vasile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cousins"/>
+        <NamedIndividual IRI="#Buta_Alexandra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Buta_Alexandra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grandparents"/>
+        <NamedIndividual IRI="#Buta_Aurora"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Buta_Aurora"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cousins"/>
+        <NamedIndividual IRI="#Buta_Bogdan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Buta_Bogdan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grandparents"/>
+        <NamedIndividual IRI="#Buta_Ioan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Buta_Ioan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Buta_Radu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parents"/>
+        <NamedIndividual IRI="#Buta_Sabina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Buta_Sabina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Buta_Vica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nephews"/>
+        <NamedIndividual IRI="#Craciun_David"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Craciun_David"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Craciun_Florin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Craciun_Irina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Tudose_Adriana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Tudose_Marian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cousins"/>
+        <NamedIndividual IRI="#Tudose_Ovidiu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Relatives"/>
+        <NamedIndividual IRI="#Tudose_Ovidiu"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedTo"/>
+        <NamedIndividual IRI="#Alexandroaie_Ariclia"/>
+        <NamedIndividual IRI="#Alexandroaie_Vasile"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Ariclia"/>
+        <NamedIndividual IRI="#Alexandroaie_Gheorghe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Ariclia"/>
+        <NamedIndividual IRI="#Tudose_Adriana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Ariclia"/>
+        <NamedIndividual IRI="#Alexandroaie_Didi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedTo"/>
+        <NamedIndividual IRI="#Alexandroaie_Didi"/>
+        <NamedIndividual IRI="#Alexandroaie_Oana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Didi"/>
+        <NamedIndividual IRI="#Alexandroaie_Raul"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#siblingOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Didi"/>
+        <NamedIndividual IRI="#Tudose_Adriana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#siblingOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Didi"/>
+        <NamedIndividual IRI="#Alexandroaie_Gheorghe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Didi"/>
+        <NamedIndividual IRI="#Alexandroaie_Vasile"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Didi"/>
+        <NamedIndividual IRI="#Alexandroaie_Ariclia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedTo"/>
+        <NamedIndividual IRI="#Alexandroaie_Gheorghe"/>
+        <NamedIndividual IRI="#Buta_Sabina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#siblingOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Gheorghe"/>
+        <NamedIndividual IRI="#Tudose_Adriana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#siblingOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Gheorghe"/>
+        <NamedIndividual IRI="#Alexandroaie_Didi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Gheorghe"/>
+        <NamedIndividual IRI="#Alexandroaie_Ariclia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Gheorghe"/>
+        <NamedIndividual IRI="#Alexandroaie_Vasile"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedTo"/>
+        <NamedIndividual IRI="#Alexandroaie_Oana"/>
+        <NamedIndividual IRI="#Alexandroaie_Didi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Oana"/>
+        <NamedIndividual IRI="#Alexandroaie_Raul"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Raul"/>
+        <NamedIndividual IRI="#Alexandroaie_Oana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Raul"/>
+        <NamedIndividual IRI="#Alexandroaie_Didi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedTo"/>
+        <NamedIndividual IRI="#Alexandroaie_Vasile"/>
+        <NamedIndividual IRI="#Alexandroaie_Ariclia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Vasile"/>
+        <NamedIndividual IRI="#Alexandroaie_Didi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Vasile"/>
+        <NamedIndividual IRI="#Alexandroaie_Gheorghe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Alexandroaie_Vasile"/>
+        <NamedIndividual IRI="#Tudose_Adriana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#siblingOf"/>
+        <NamedIndividual IRI="#Buta_Alexandra"/>
+        <NamedIndividual IRI="#Buta_Bogdan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Buta_Alexandra"/>
+        <NamedIndividual IRI="#Buta_Vica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Buta_Alexandra"/>
+        <NamedIndividual IRI="#Buta_Radu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedTo"/>
+        <NamedIndividual IRI="#Buta_Aurora"/>
+        <NamedIndividual IRI="#Buta_Ioan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Buta_Aurora"/>
+        <NamedIndividual IRI="#Buta_Radu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Buta_Aurora"/>
+        <NamedIndividual IRI="#Buta_Sabina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#siblingOf"/>
+        <NamedIndividual IRI="#Buta_Bogdan"/>
+        <NamedIndividual IRI="#Buta_Alexandra"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Buta_Bogdan"/>
+        <NamedIndividual IRI="#Buta_Vica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Buta_Bogdan"/>
+        <NamedIndividual IRI="#Buta_Radu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedTo"/>
+        <NamedIndividual IRI="#Buta_Ioan"/>
+        <NamedIndividual IRI="#Buta_Aurora"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Buta_Ioan"/>
+        <NamedIndividual IRI="#Buta_Sabina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Buta_Ioan"/>
+        <NamedIndividual IRI="#Buta_Radu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedTo"/>
+        <NamedIndividual IRI="#Buta_Radu"/>
+        <NamedIndividual IRI="#Buta_Vica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Buta_Radu"/>
+        <NamedIndividual IRI="#Buta_Bogdan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Buta_Radu"/>
+        <NamedIndividual IRI="#Buta_Alexandra"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#siblingOf"/>
+        <NamedIndividual IRI="#Buta_Radu"/>
+        <NamedIndividual IRI="#Buta_Sabina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Buta_Radu"/>
+        <NamedIndividual IRI="#Buta_Ioan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Buta_Radu"/>
+        <NamedIndividual IRI="#Buta_Aurora"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedTo"/>
+        <NamedIndividual IRI="#Buta_Sabina"/>
+        <NamedIndividual IRI="#Alexandroaie_Gheorghe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#siblingOf"/>
+        <NamedIndividual IRI="#Buta_Sabina"/>
+        <NamedIndividual IRI="#Buta_Radu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Buta_Sabina"/>
+        <NamedIndividual IRI="#Buta_Aurora"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Buta_Sabina"/>
+        <NamedIndividual IRI="#Buta_Ioan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedTo"/>
+        <NamedIndividual IRI="#Buta_Vica"/>
+        <NamedIndividual IRI="#Buta_Radu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Buta_Vica"/>
+        <NamedIndividual IRI="#Buta_Bogdan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Buta_Vica"/>
+        <NamedIndividual IRI="#Buta_Alexandra"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Craciun_David"/>
+        <NamedIndividual IRI="#Craciun_Irina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Craciun_David"/>
+        <NamedIndividual IRI="#Craciun_Florin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedTo"/>
+        <NamedIndividual IRI="#Craciun_Florin"/>
+        <NamedIndividual IRI="#Craciun_Irina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Craciun_Florin"/>
+        <NamedIndividual IRI="#Craciun_David"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedTo"/>
+        <NamedIndividual IRI="#Craciun_Irina"/>
+        <NamedIndividual IRI="#Craciun_Florin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Craciun_Irina"/>
+        <NamedIndividual IRI="#Craciun_David"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#siblingOf"/>
+        <NamedIndividual IRI="#Craciun_Irina"/>
+        <NamedIndividual IRI="#Tudose_Ovidiu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Craciun_Irina"/>
+        <NamedIndividual IRI="#Tudose_Marian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Craciun_Irina"/>
+        <NamedIndividual IRI="#Tudose_Adriana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedTo"/>
+        <NamedIndividual IRI="#Tudose_Adriana"/>
+        <NamedIndividual IRI="#Tudose_Marian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Tudose_Adriana"/>
+        <NamedIndividual IRI="#Tudose_Ovidiu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Tudose_Adriana"/>
+        <NamedIndividual IRI="#Craciun_Irina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Tudose_Adriana"/>
+        <NamedIndividual IRI="#Alexandroaie_Vasile"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Tudose_Adriana"/>
+        <NamedIndividual IRI="#Alexandroaie_Ariclia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#marriedTo"/>
+        <NamedIndividual IRI="#Tudose_Marian"/>
+        <NamedIndividual IRI="#Tudose_Adriana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Tudose_Marian"/>
+        <NamedIndividual IRI="#Tudose_Ovidiu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parentOf"/>
+        <NamedIndividual IRI="#Tudose_Marian"/>
+        <NamedIndividual IRI="#Craciun_Irina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#siblingOf"/>
+        <NamedIndividual IRI="#Tudose_Ovidiu"/>
+        <NamedIndividual IRI="#Craciun_Irina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Tudose_Ovidiu"/>
+        <NamedIndividual IRI="#Tudose_Adriana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sonOf"/>
+        <NamedIndividual IRI="#Tudose_Ovidiu"/>
+        <NamedIndividual IRI="#Tudose_Marian"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#sonOf"/>
+        <ObjectProperty IRI="#parentOf"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#marriedTo"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#siblingOf"/>
+    </SymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#parentOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#sonOf"/>
+    </AsymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#marriedTo"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#siblingOf"/>
+    </TransitiveObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty IRI="#marriedTo"/>
+    </ReflexiveObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty IRI="#siblingOf"/>
+    </ReflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#parentOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#sonOf"/>
+    </IrreflexiveObjectProperty>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
